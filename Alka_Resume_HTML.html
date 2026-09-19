@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alka Poddar - Resume</title>
+
+<style>
+
+
+@page {
+    size: Letter;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8.5pt;
+    line-height: 1.02;
+}
+
+.page {
+    width: 612pt;
+    min-height: 792pt;
+    margin: 0 auto;
+    padding: 14pt 25pt 10pt 25pt;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.name {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.5pt;
+    line-height: 0.99;
+    font-weight: 700;
+}
+
+.contact {
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.24;
+    font-weight: 700;
+}
+
+.contact div {
+    margin: 0;
+}
+
+.contact a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 6pt;
+    font-weight: 400;
+}
+
+/* =====================================================
+   SECTIONS
+   ===================================================== */
+
+.section {
+    margin-top: 10pt;
+}
+
+.section-title {
+    margin: 0 0 5pt 0;
+    padding: 0 0 1pt 0;
+    border-bottom: 0.7pt solid #000;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.3pt;
+    line-height: 1;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+
+.section-title::first-letter {
+    font-size: 10pt;
+}
+
+/* =====================================================
+   SUMMARY
+   ===================================================== */
+
+.summary {
+    margin: 0;
+    font-size: 8.5pt;
+    line-height: 1.05;
+}
+
+/* =====================================================
+   TECHNICAL SKILLS
+   ===================================================== */
+
+.skills {
+    margin-left: 10.8pt;
+}
+
+.skill {
+    margin: 0 0 0.5pt 0;
+    font-size: 8.5pt;
+    line-height: 1.1;
+}
+
+.skill strong {
+    font-weight: 700;
+}
+
+/* =====================================================
+   PROJECTS
+   ===================================================== */
+
+.entry {
+    margin-left: 10.8pt;
+    margin-bottom: 4.5pt;
+}
+
+.entry-title {
+    margin: 0;
+    font-size: 8.5pt;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.entry-title a {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.technology {
+    margin-top: 1pt;
+    font-size: 8.3pt;
+    line-height: 1.08;
+    font-style: italic;
+}
+
+.bullets {
+    margin: 0.5pt 0 0 12pt;
+    padding: 0;
+    font-size: 8.5pt;
+    line-height: 1.14;
+}
+
+.bullets li {
+    margin: 0 0 1pt 0;
+    padding-left: 0.5pt;
+}
+
+.bullets li::marker {
+    font-size: 5pt;
+}
+
+/* =====================================================
+   EDUCATION
+   ===================================================== */
+
+.education {
+    margin-left: 10.8pt;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.education-name {
+    font-size: 8.5pt;
+    font-weight: 700;
+}
+
+.education-details {
+    margin-top: 0.25pt;
+    font-size: 8.5pt;
+    font-style: italic;
+}
+
+.date {
+    font-size: 7.9pt;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   EXPERIENCE
+   ===================================================== */
+
+.experience {
+    margin-left: 10.8pt;
+    margin-bottom: 1pt;
+}
+
+.experience-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.experience-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+}
+
+.experience-subtitle {
+    margin-top: 0.25pt;
+    font-size: 7.9pt;
+    font-style: italic;
+}
+
+/* =====================================================
+   CERTIFICATIONS
+   ===================================================== */
+
+.certification {
+    margin-left: 10.8pt;
+    margin-bottom: 1.5pt;
+}
+
+.certification-title {
+    font-size: 8.4pt;
+    /* font-weight: 700; */
+}
+
+.certification-name {
+    margin-top: 0.25pt;
+    font-size: 7.9pt;
+    font-style: italic;
+}
+
+/* =====================================================
+   PRINT
+   ===================================================== */
+
+@media print {
+    html,
+    body {
+        width: 612pt;
+        height: 792pt;
+    }
+
+    .page {
+        width: 612pt;
+        min-height: 792pt;
+        margin: 0;
+    }
+}
+
+@media screen {
+    body {
+        background: #eee;
+    }
+
+    .page {
+        background: #fff;
+        box-shadow: 0 0 8px rgba(0,0,0,.12);
+    }
+}
+
+/* =====================================================
+   RESPONSIVE SCREEN LAYOUT
+   ===================================================== */
+
+@media screen and (min-width: 701px) {
+    body {
+        overflow-x: hidden;
+        padding: 24px 0;
+    }
+
+    .page {
+        width: 612pt;
+        min-height: 792pt;
+        margin: 0 auto;
+        transform: none;
+    }
+}
+
+/* Tablet + mobile */
+@media screen and (max-width: 700px) {
+    html, body {
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        padding: 12px 0;
+        background: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .page {
+        width: 612pt;
+        min-height: 792pt;
+        flex: 0 0 612pt;
+        margin: 0;
+        transform-origin: top center;
+        transform: scale(calc((100vw - 24px) / 612pt));
+        margin-bottom: calc(792pt * (calc((100vw - 24px) / 612pt) - 1));
+    }
+}
+/* Phones */
+@media screen and (max-width: 640px) {
+    body {
+        padding: 8px 0;
+    }
+
+    .page {
+        transform: scale(calc(100vw / 612pt));
+        margin-bottom: calc(792pt * (100vw / 612pt - 1));
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1 class="name">ALKA PODDAR</h1>
+
+        <div class="contact">
+            <div>Contact: +91 9131886902</div>
+            <div>Email: <a href="mailto:alkapoddar1218@gmail.com" style="color: rgb(8, 8, 163);">alkapoddar1218@gmail.com</a></div>
+            <div>
+                <a href="https://www.linkedin.com/in/alka-poddar-82499224a/" style="color: rgb(8, 8, 163);">LinkedIn</a>
+                <span class="separator">|</span>
+                <a href="https://github.com/ALKAPODDAR?tab=repositories" style="color: rgb(8, 8, 163);">GitHub</a>
+                <span class="separator">|</span>
+                <a href=" https://alkapoddar.github.io/My-Portfolio/" style="color: rgb(8, 8, 163);">Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">SUMMARY</h2>
+        <!-- use <br> tag for next line-->
+        <p class="summary">
+            Entry-Level Data Analyst with hands-on project experience using SQL, Python, Pandas, and Power BI to clean, analyze, and visualize customer, retail,
+            and campaign data. Analyzed datasets containing 500+ customer interactions, 3,900+ purchase records, and 246K+ retail transactions to identify revenue
+            trends, customer segments, and campaign opportunities.
+        </p>
+
+    </section>
+
+
+    <!-- ================= TECHNICAL SKILLS ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <strong>Data Analysis</strong>: : SQL, Python, Exploratory Data Analysis, Data Cleaning, Data Visualization, Dashboarding, Customer Segmentation, A/B Testing, Affinity
+                Analysis, Conversion Rate Optimization
+            </div>
+
+            <div class="skill">
+                <strong>Business Intelligence</strong>: Power BI, DAX
+            </div>
+
+            <div class="skill">
+                <strong>Libraries</strong>: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+            </div>
+
+            <div class="skill">
+                <strong>Tools</strong>:  MySQL, MySQL Workbench, Jupyter Notebook, Git, GitHub
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SELECTED PROJECTS ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">PROJECTS & ANALYTICAL EXPERIENCE</h2>
+
+        <article class="entry">
+
+            <div class="entry-title">
+                Retail Strategy and Analytics | Quantium Virtual Experience Program | 
+                <a href="https://github.com/ALKAPODDAR/Quantium/blob/main/README.md" style="color: rgb(8, 8, 163);">Project</a> 
+            </div>
+
+            <div class="technology">
+                Python (Pandas), Matplotlib, Affinity Analysis, A/B Testing | Forage Job Simulation
+            </div>
+
+            <ul class="bullets">
+
+                <li>
+                    Cleaned, merged, and analyzed 246K+ retail transactions to examine customer segments and their contribution to chip sales.
+                </li>
+
+                <li>
+                    Applied affinity analysis to identify segment-specific purchasing preferences and develop product-placement recommendations.
+                </li>
+
+                <li>
+                    Designed a trial-versus-control store evaluation framework using correlation and magnitude-distance metrics to identify comparable control stores.
+                </li>
+
+                <li>
+                    Synthesized findings into recommendations for segment-focused promotions and store-layout decisions.
+                </li>
+
+            </ul>
+
+        </article>
+
+        
+
+        <article class="entry">
+
+            <div class="entry-title">
+                Marketing Campaign Performance Analysis | BCG-X Virtual Experience Program | 
+                <a href="https://github.com/ALKAPODDAR/BCG-X/blob/main/README.md" style="color: rgb(8, 8, 163);">Project</a>
+            </div>
+
+            <div class="technology">
+                Python (Pandas, Seaborn, Scikit-learn), Conversion Rate Optimization, Weighted Scoring | Forage Job Simulation
+            </div>
+
+            <ul class="bullets">
+
+                <li>
+                    Analyzed 500+ customer interactions across two campaigns and three channels—email, Instagram, and web banners—using Python.
+                </li>
+
+
+                <li>
+                    Built visual comparisons of conversion rates, revenue, and efficiency for new and existing customers across campaign-channel combinations.
+                </li>
+
+
+                <li>
+                    Identified that Campaign A – Email showed 54% higher revenue potential than Campaign B – Email and recommended evaluating budget allocation using
+                    conversion, revenue, and efficiency metrics.
+                </li>
+
+                <li>
+                    Developed a weighted ranking model to prioritize campaign-channel combinations for new-customer growth analysis.
+                </li>
+
+            </ul>
+
+        </article>
+
+        <article class="entry">
+
+            <div class="entry-title">
+                Customer Shopping Behaviour Analysis | 
+                <a href="https://github.com/ALKAPODDAR/Customer-Behaviour-Analysis/blob/main/README.md" style="color: rgb(8, 8, 163);">Project</a>
+            </div>
+
+            <div class="technology">
+                Python (Pandas), SQL, MySQL, Power BI | Kaggle Dataset
+            </div>
+
+            <ul class="bullets">
+
+                <li>
+                    Cleaned and analyzed 3,900+ customer purchase records across 18 features to examine shopping patterns and revenue trends.
+                </li>
+
+                <li>
+                    Used MySQL to analyze customer segments, subscription behavior, product performance, and revenue contribution.
+                </li>
+
+                <li>
+                    Found that non-subscribers contributed approximately three times the total revenue of subscribers, while the young-adult group contributed
+                    approximately 27% of total revenue.
+                </li>
+
+                <li>
+                    Built a Power BI dashboard to visualize KPIs and communicate observations related to subscription growth, retention, product promotion, and targeted
+                    marketing.
+                </li>
+
+
+            </ul>
+
+        </article>
+
+
+
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">EDUCATION</h2>
+
+        <div class="education">
+
+            <div class="education-row">
+
+                <strong class="education-name">
+                    Samrat Ashok Technological Institute, Vidisha
+                </strong>
+
+            </div>
+
+            <div class="education-row">
+
+                <div class="education-details">
+                    Bachelor of Technology in Computer Science &amp; Engineering (Blockchain) |
+                    <strong>CGPA: 8.13</strong>
+                </div>
+
+                <span class="date">
+                    Aug 2023 − Jun 2026
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">EXPERIENCE</h2>
+
+
+        <article class="experience">
+
+            <div class="experience-row">
+
+                <strong class="experience-title">
+                    In-house Internship Program | SATI | 
+                    <a href="https://drive.google.com/file/d/1rw0dmLID2nGE60hr17268cF8ObaWiW0X/view?usp=sharing" style="color: rgb(8, 8, 163);">Certificate</a>
+                </strong>
+
+                <span class="date">
+                    Jul 2023
+                </span>
+
+            </div>
+
+            <div class="experience-subtitle">
+                Programming Tactics 
+            </div>
+
+            <ul class="bullets">
+
+                <li>
+                    Built and queried relational databases in MySQL, applying joins, subqueries, CTEs, and window functions across 30+ SQL problems involving database
+                    design and normalization.
+                </li>
+
+                <li>
+                    Performed exploratory data analysis on a baseball dataset to examine talent-producing schools, franchise spending, and player-retention patterns.
+                </li>
+
+
+            </ul>
+
+        </article>
+
+
+    </section>
+
+    <!-- ================= EXTRACURRICULAR ================= -->
+
+
+    <section class="section">
+
+        <h2 class="section-title">LEADERSHIP</h2>
+
+        <article class="experience">
+
+            <div class="experience-row">
+
+                <strong class="experience-title">
+                    FIAT - Speakers &amp; Skill Development Club | SATI | 
+                    <a href="https://drive.google.com/file/d/1R_xjwgpHLMS9R-rHlJMRzWiBIA_MCc9z/view?usp=sharing" style="color: rgb(8, 8, 163);">Certificate</a>
+                </strong>
+
+            </div>
+
+            <div class="experience-row">
+
+                <div class="experience-subtitle">
+                    Lead Anchor | Host 
+                </div>
+
+                <span class="date">
+                    2023 − 2026
+                </span>
+
+            </div>
+
+            <ul class="bullets">
+
+                <li>
+                    Guided and mentored 50+ club members in public speaking and stage presence to build hosting confidence.
+                </li>
+
+            </ul>
+
+        </article>
+
+    </section>
+
+    
+
+
+    <!-- ================= CERTIFICATION / COURSES ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">CERTIFICATIONS & COURSES</h2>
+
+        <article class="certification">
+
+            <div class="certification-title">
+                BCG X — Introduction to Data for Decision Makers | Forage | 
+                <strong><a href="https://drive.google.com/file/d/1-twOlHVw8flQlfE5SQiX4Usifl9pyDXO/view?usp=sharing" style="color: rgb(8, 8, 163);">Certificate</a></strong>
+            </div>
+
+        </article>
+        
+         <article class="certification">
+
+            <div class="certification-title">
+                 Quantium — Retail Strategy and Analytics | Forage | 
+                <strong><a href="https://drive.google.com/file/d/1WAC32OYYNinLiPND57gFXU4c5N4NNBmW/view?usp=sharing" style="color: rgb(8, 8, 163);">Certificate</a></strong>
+            </div>
+
+        </article>
+
+
+        <article class="certification">
+
+            <div class="certification-title">
+                A/B testing in Python | Udemy: 365 Careers
+            </div>
+
+        </article>
+
+
+        <article class="certification">
+
+            <div class="certification-title">
+                SQL for Data Analysis – Advanced SQL Querying Techniques, Python Data Science Data Prep &amp; EDA with Python | Udemy: Maven Analytics
+            </div>
+
+        </article>
+
+
+        <article class="certification">
+
+            <div class="certification-title">
+                Microsoft Power BI Desktop for Business Intelligence | Udemy
+            </div>
+
+        </article>
+
+
+    </section>
+
+</div>
+
+</body>
+</html>
